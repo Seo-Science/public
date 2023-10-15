@@ -1,0 +1,155 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  border: 1px solid #7a7a7a;
+  box-shadow: 0 0 10px;
+  cursor: pointer;
+}
+
+.chosen {
+  background-color: blue;
+}
+
+.title-p {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.title-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-out;
+}
+
+select,
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Collapsible OpenAI API Configuration */
+.collapsible {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.collapsible input {
+  width: 90%;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsible-open {
+  max-height: 500px; /* Adjust this value as needed */
+  transition: max-height 0.3s ease-in;
+}
+
+.collapsible-button {
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Section Styles */
+.section {
+  padding: 0.5rem;
+}
+
+.section-title-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title-container select {
+  max-width: 70%;
+  flex: 0.5;
+  max-height: 50px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* CSS for the toast message */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(300px);
+  /* display: none; */
+}
+
+.show-toast {
+  /* display: block; */
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+#error-box {
+  width: 80%; /* or set a fixed width, e.g., 300px */
+  margin: 10px auto;
+  margin-top: 0px;
+  border-radius: 5px; /* rounded corners */
+  color: #c91a2c; /* dark red text color */
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the content horizontally */
+  justify-content: center; /* centers the content vertically */
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  */
+}
